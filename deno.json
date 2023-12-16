@@ -1,0 +1,26 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "semiColons": false,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["main.ts", "deps.ts", "src/"]
+  },
+
+  "lint": {
+    "include": ["main.ts", "deps.ts", "src/"],
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+
+  "imports": {
+    "/": "./"
+  }
+}
